@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka:wght@500&display=swap');
 *{
     margin: 0;
@@ -134,6 +133,39 @@ header{
     color: #fff;
 }
 
+/*Iconos*/
+
+#iconos{
+    padding: 0px 50px;
+    background:#cb9bde;
+}
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-iconos div{
+    flex:1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(145, 100, 191, 0.6);
+}
+.contenido-iconos div i{
+    color: #4b0081;
+}
+.contenido-iconos div h6{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+.contenido-iconos div p{
+    color:#4b0081;
+    font-size: 15px;
+}
+
+/*===================================================================SOBRE NOSOTROS=====================================================================*/
+
 /*Equipo*/
 
 .contenedor{
@@ -219,37 +251,8 @@ header{
     color: #000000;
 }
 
-/*Iconos*/
 
-#iconos{
-    padding: 0px 50px;
-    background:#cb9bde;
-}
-.contenido-iconos{
-    padding: 50px 50px 0px 50px;
-    display:flex;
-    justify-content: space-between;
-    text-align: center;
-}
-.contenido-iconos div{
-    flex:1;
-    margin: 20px 0px;
-    border-right: 2px solid rgba(145, 100, 191, 0.6);
-}
-.contenido-iconos div i{
-    color: #4b0081;
-}
-.contenido-iconos div h6{
-    color:#fff;
-    font-size: 20px;
-    font-weight: 100;
-    margin: 10px 0px;
-}
-.contenido-iconos div p{
-    color:#4b0081;
-    font-size: 15px;
-}
-
+/*=========================================================INICIAR SESION==========================================================================*/
 /*Iniciar Sesion*/
 
 .ilustracion{
@@ -257,7 +260,6 @@ header{
     background-color: rgba(196, 196, 196, 0.5);;
     width: 576px;
     height: 759px;
-    display: flex;
 }
 
 .ilustracion img{
@@ -270,6 +272,8 @@ header{
     height: 403px;
     border: 1px solid #A09898;
     box-sizing: border-box;
+    display: flexbox;
+    text-align: center;
 }
 
 .formulario h1{
@@ -285,8 +289,21 @@ header{
 }
 
 
-.iniciar_sesion{
+.parametros{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.iniciar_sesion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+
 }
 
 input{
@@ -325,7 +342,7 @@ input[type="number"]{
 }
 
 .enviar{
-    
+
     margin-left: 40px;
     margin-top: 15px;
     background: #CB9BDE;
@@ -374,10 +391,269 @@ input[type="number"]{
     font-size: 36px;
     line-height: 44px;
     text-decoration-line: underline;
-
     color: #CB9BDE;
+    transition: all 2s;
+    
 }
 
+.registrar a:hover{
+
+    margin-top: 20px;
+    margin-left: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-decoration-line: underline;
+    color: #4b0081;
+    
+}
+
+/*=====================================================================JUGAR==========================================================================*/
+
+#Menu-Seleccion{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+
+    justify-content: center;
+}
+
+.contenedor-menu{
+
+    height: 836px;
+    width: 90%;
+    max-width: 629px;
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.titulo-menu{
+    align-items: center;
+    text-align: center;
+}
+
+#titulo-mo{
+    height: 163px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 155px;
+    text-align: center;
+    color: #4B0081;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boton-jugar{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #4B0081;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-jugar:hover{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #9966ac;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.boton-jugar a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+}
+.boton-jugar h2{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+}
+
+
+.boton-seleccionar-nivel{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+    display: flex;
+
+    align-items: center;
+
+    background: #4B0081;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-seleccionar-nivel:hover{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+    display: flex;
+
+    align-items: center;
+
+    background: #9966ac;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.boton-seleccionar-nivel a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+}
+.boton-seleccionar-nivel h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #FFFFFF;
+}
+
+.boton-salir{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #4B0081;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.boton-salir:hover{
+    margin-top: 62px;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+
+    background: #9966ac;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.boton-salir a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 114px;
+}
+.boton-salir h2{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #FFFFFF;
+}
+
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
+.sonido{
+    width: 120px;
+    height: 93px;
+}
+
+.icon{
+    width: 120px;
+    height: 93px;
+    color: #000000;
+}
+
+/*=================================================================SELECCIONAR NIVEL==================================================================*/
+
+#Seleccionar-Nivel-P{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: block;
+
+    justify-content: center;
+}
+
+.fondo-nivel{
+    margin-top: 3%;
+    margin-left: 20%;
+    width: 1164px;
+    height: 678px;
+
+    background: #CB9BDE;
+    opacity: 0.6;
+    border-radius: 60px;
+}
+
+.fondo-nivel img{
+    width: 1024px;
+    height: 682px;
+    margin-left: 5%;
+}
+/*=====================================================================REGISTRO===========================================================================*/
+
+
+.registro_back{
+    background:url(../WALLPAPERS/Wallpaper_Principal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    width: 100vw;
+    height: 100vh;
+}
+
+.registrarse{
+	width: 300px;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media (max-width: 400px){
+	.login{
+		width: 90%;
+	}
+}
+
+.Registro img{
+    width: 181px;
+    height: 170px;
+    
+}
 /*footer*/
 
 footer{
@@ -407,7 +683,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 
-/*Responsive*/
+/*=========================================================================RESPONSIVE==================================================================*/
+
 @media(max-width: 768px){
     /*Menu*/
     .mostrar-menu, .esconder-menu{
@@ -444,6 +721,15 @@ body::-webkit-scrollbar-thumb{
         flex-direction: column;
     }
 
+    /*Registro*/
+
+    .registrarse,
+    .Registro{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
     /*Footer*/
 
     .contenedor-footer{
