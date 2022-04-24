@@ -322,13 +322,13 @@ input[type="number"]{
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-    color: #A8A7A7;
+    color: #4B0081;
 
     width: 82%;
     padding: 10px;
     border: none;
     background: linear-gradient(0deg, #F3F2F2, #F3F2F2), linear-gradient(0deg, #F3F2F2, #F3F2F2), #F3F2F2;
-    color: #f2f2f2;
+    color: #4B0081;
 }
 
 .input-contenedor{
