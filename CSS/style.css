@@ -313,22 +313,30 @@ input{
     height: 41px;
 }
 
+input:focus{
+    border: 3px solid #9966ac;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(134, 68, 201, 0.749);
+}
+
 input[type="text"],
 input[type="password"],
-input[type="number"]{
+input[type="number"],
+input[type="email"],
+input[type="date"]{
     
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-    color: #A8A7A7;
+    color: #4B0081;
 
     width: 82%;
     padding: 10px;
     border: none;
     background: linear-gradient(0deg, #F3F2F2, #F3F2F2), linear-gradient(0deg, #F3F2F2, #F3F2F2), #F3F2F2;
-    color: #f2f2f2;
+    color: #4B0081;
 }
 
 .input-contenedor{
@@ -588,11 +596,6 @@ input[type="number"]{
     height: 93px;
 }
 
-.icon{
-    width: 120px;
-    height: 93px;
-    color: #000000;
-}
 
 /*=================================================================SELECCIONAR NIVEL==================================================================*/
 
@@ -619,7 +622,7 @@ input[type="number"]{
 .fondo-nivel img{
     width: 1024px;
     height: 682px;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 /*=====================================================================REGISTRO===========================================================================*/
 
@@ -633,27 +636,34 @@ input[type="number"]{
     height: 100vh;
 }
 
-.registrarse{
-	width: 300px;
-	border: 1px solid #E1E1E1;
-	border-radius: 4px;
-	padding: 15px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-@media (max-width: 400px){
-	.login{
-		width: 90%;
-	}
+.registrarse h1{
+    
+    text-align: center;
+    width: 435px;
+    height: 163px;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 155px;
+
+    color: #4B0081;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.Registro img{
-    width: 181px;
-    height: 170px;
-    
+.contenido-registro{
+    width: 100%;
+    padding: 15px;
 }
+.registrarse{
+    margin: auto;
+    width: 600px;
+    margin-top: 150px;
+    border-radius: 2%;
+    background: #C4C4C4;
+    border-radius: 48px;
+    text-align: center;
+}
+
+
 /*footer*/
 
 footer{
